@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Women Welfare Schemes Portal</title>
 
+<style>
+  /* ===== basic reset ===== */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #fdfdfd;
+    color: #1a1a1a;
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  /* ===== wrapper ===== */
+  .hero-wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  /* ===== badge ===== */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #ffe0eb;
+    color: #c70051;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+  .badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ===== headline ===== */
+  .headline h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .headline h1 .highlight {
+    color: #c70051;
+  }
+ nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ced4da;
+    background: #fff;
+  }
+  nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  .headline p {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    color: #333333;
+    max-width: 700px;
+  }
+
+  /* ===== hero image ===== */
+  .hero-image-container {
+    margin-top: 1.8rem;
+    text-align: center;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  }
+
+  /* ===== stats ===== */
+  .stats {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .stats .stat-item {
+    flex: 1 1 120px;
+    text-align: center;
+  }
+  .stats .stat-item .number {
+    display: block;
+    font-size: 2rem;
+    color: #c70051;
+  }
+
+  /* ===== extra section ===== */
+  .extra-section {
+    margin-top: 3rem;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  }
+  .extra-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+  .extra-section p {
+    font-size: 0.95rem;
+    color: #444444;
+  }
+  .extra-section ul {
+    margin-top: 0.8rem;
+    list-style: disc inside;
+  }
+  .extra-section ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* ===== image upload ===== */
+  .upload-section {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+  .upload-section label {
+    display: inline-block;
+    background: #c70051;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .upload-section input[type="file"] {
+    display: none;
+  }
+  .upload-note {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+
+  /* ===== responsive ===== */
+  @media (max-width: 800px) {
+    .headline h1 { font-size: 2.3rem; }
+    .stats { justify-content: center; }
+  }
+  @media (max-width: 480px) {
+    .headline h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="welfare/HOME.html">Home</a>
+  <a href="welfare/Schemes.html">Schemes</a>
+  <a href="welfare/Registration.html">Registration</a>
+  <a href="welfare/contact.html">Contact</a>
+  <a href="welfare/ABOUT.HTML">About</a>
+</nav>
+<div class="hero-wrapper">
+  <!-- Badge -->
+  <div class="badge">
+    <!-- simple shield icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 13l4 4L19 7" />
+    </svg>
+    Government of India
+  </div>
+
+  <!-- Headline -->
+  <div class="headline">
+    <h1>
+      Women Welfare <br />
+      <span class="highlight">Schemes Portal</span>
+    </h1>
+    <p>
+      Empowering women across India through accessible welfare schemes. Your gateway to education, health, employment, and financial support.
+    </p>
+  </div>
+
+  <!-- Hero Image -->
+  <div class="hero-image-container">
+    <!-- default image; user can change via upload below -->
+    <img
+      src="F:\coding\kushal\HTML\hi\WOMAN1.JPG"
+      alt="Women welfare banner"
+      class="hero-image"
+      id="heroImage"
+    />
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat-item">
+      <span class="number">500+</span>
+      Programs
+    </div>
+    <div class="stat-item">
+      <span class="number">10M+</span>
+      Beneficiaries
+    </div>
+    <div class="stat-item">
+      <span class="number">24/7</span>
+      Support
+    </div>
+  </div>
+
+  <!-- Extra section: something more related -->
+  <div class="extra-section">
+    <h2>What you can do next</h2>
+    <p>
+      This portal is built to help beneficiaries quickly find and apply to schemes. Below are a few helpful next steps you might add or expand:
+    </p>
+    <ul>
+      <li>Create a simple registration or login flow so users can save preferences and track applications.</li>
+      <li>Show featured schemes or recent updates right below the hero section to draw attention.</li>
+      <li>Add links to local support centers, helplines, or community events for awareness workshops.</li>
+    </ul>
+    <p>
+      You can also expand the portal later with pages for About, Schemes list, Registration, and How to Join guidance.
+    </p>
+  </div>
+
+  <!-- Image upload option -->
+  <div class="upload-section">
+    <label for="imageUpload">Upload/Change Hero Image</label>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <div class="upload-note">Choose an image from your device. Recommended size ~1600×900px.</div>
+  </div>
+</div>
+
+<script>
+  // handle hero image change
+  const imageInput = document.getElementById('imageUpload');
+  const heroImage = document.getElementById('heroImage');
+
+  imageInput.addEventListener('change', function () {
+    const file = this.files[0];
+    if (!file) return;
+
+    // only proceed if file is an image
+    if (!file.type.startsWith('image/')) {
+      alert('Please select an image file.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      heroImage.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+</script>
+
+</body>
+</html>
